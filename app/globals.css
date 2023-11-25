@@ -23,3 +23,7 @@
 .bar_before {
     transform: translate3d(0,6px,0) rotate(45deg);
 }
+
+.light_primary_color {
+    background: linear-gradient(230.1deg, #f4f8fe 20.13%,#f4f8fe 76.45%);
+}
