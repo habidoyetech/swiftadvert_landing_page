@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.purple_btn {
+    @apply rounded-xl border border-primary-color bg-primary-color py-2 px-4 text-white transition-all hover:bg-white hover:text-primary-color text-center text-sm font-dmsans flex items-center justify-center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.three_bar {
+    @apply flex h-6 items-center cursor-pointer relative gap-1 flex-col;
+    
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bar {
+    @apply bg-primary-color h-[3px] w-7 rounded-[4px] transition duration-200;
+}
+
+.bar_after {
+    transform: translate3d(0,-8px,0) rotate(135deg);
+}
+
+.bar_before {
+    transform: translate3d(0,6px,0) rotate(45deg);
 }
