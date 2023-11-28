@@ -11,11 +11,11 @@ const Nav = () => {
 
 
   return (
-    <div className='fixed top-0 left-0 w-full backdrop-blur-lg bg-opacity-70  '>  
-        <nav className='px-8  sm:10 lg:px-20 py-5 text-base flex items-center justify-between relative'>
+    <div className='fixed top-0 left-0 w-full backdrop-blur-lg bg-opacity-70 shadow-md z-20'>  
+        <nav className='px-8  sm:px-20 lg:px-20 py-5 text-base flex items-center justify-between relative'>
             <Link href="/" className='flex gap-2 items-center justify-center'>
                 <Image src='/assets/images/logo.png' width={40} height={40} alt='brand-logo'/>
-                <p className='text-xl font-bold text-primary-color '>Swift Advert</p>
+                <p className='text-xl font-bold text-primary-color hidden md:block '>Swift Advert</p>
             </Link>
 
             {/* Desktop Navigation */}
@@ -125,7 +125,7 @@ const Nav = () => {
                     </Link>
                   </div>
                   <div className='flex flex-col space-y-5'>
-                    <h4 className='font-semibold'>Advetisers</h4>
+                    <h4 className='font-semibold'>Business/Brand</h4>
                     <div className=''>
                       <button className='purple_btn gap-3 w-full '>
                         <span>
